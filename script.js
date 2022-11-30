@@ -8,7 +8,7 @@ let fiveDayCard = document.getElementById('five-day-card')
 
 locationSubmit.addEventListener('submit', function(event){
 
-	fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + locationSearchInput.value + '&limit=5&appid=8692ec89b9b44fccaa0f21d6d772044d')
+	fetch('https://api.openweathermap.org/geo/1.0/direct?q=' + locationSearchInput.value + '&limit=5&appid=8692ec89b9b44fccaa0f21d6d772044d')
 	.then((response) => response.json())
 	.then((data) => {
 
@@ -71,7 +71,7 @@ const pickCity = function (data){
 
 //API query for city name
 const getWeather = function (lat, lon){
-	fetch('http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=8692ec89b9b44fccaa0f21d6d772044d')
+	fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=8692ec89b9b44fccaa0f21d6d772044d')
 	.then((response) => response.json())
 	.then((data) => {
 		currentCard.innerHTML = 
@@ -91,7 +91,7 @@ const getWeather = function (lat, lon){
 			 `
 
 	});
-	fetch('http://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=8692ec89b9b44fccaa0f21d6d772044d')
+	fetch('https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=8692ec89b9b44fccaa0f21d6d772044d')
 	.then((response => response.json()))
 	.then((data) => {
 		console.log(data)
