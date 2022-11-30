@@ -1,4 +1,8 @@
-# weather-app
+# DISCLAIMER!!
+_This project is NOT complete! 24 hours is NOT enough time to complete an entire assignment. I have a full time job and other family commitments. Only basic functionality is included. No styling has been added._
+
+
+# Weather App
 A simple app for checking the weather
 
 
